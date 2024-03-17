@@ -22,14 +22,18 @@ const audioPlayer: AudioPlayer = {
 }
 
 const { 
-    song: anotherSong, 
+    song: anotherSong,
     songDuration: duration,
-    //details: { author: detailsAuthor} 
+    //details: { author: detailsAuthor }
 } = audioPlayer;
 const { author: author } = audioPlayer.details;
 
 console.log('Song: ', anotherSong);
 console.log('Author: ', author);
 console.log('Duration: ', duration);
+
+const [, , trunks = 'Not found']: string[] = [ 'Goku', 'Vegetta' /* , 'Trunks' */];
+
+console.log('Character 3: ' , trunks);
 
 export{};
